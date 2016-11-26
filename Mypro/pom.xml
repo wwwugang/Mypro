@@ -126,7 +126,7 @@
    </dependencies>
 
 <build>
-    <finalName>guoguo-maven-web</finalName>
+    <finalName>maven-web</finalName>
     <plugins>
       <plugin>
 
