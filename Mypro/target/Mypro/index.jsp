@@ -8,11 +8,11 @@
 <form method="POST" action="Login">
    <table>
     <tr>
-        <td>username：</td>
+        <td>username:</td>
         <td><input type="text" name="username"></td>
     </tr>
     <tr>
-        <td>password：</td>
+        <td>password:</td>
         <td><input type="password" name="password"></td>
     </tr>
     <tr>

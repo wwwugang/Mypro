@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<environments default="development">
+    <environment id="development">
+      <transactionManager type="JDBC"/>
+      <dataSource type="POOLED">
+        <property name="driver" value="com.mysql.jdbc.Driver"/>
+        
+        <!-- 提示说服务器时区设置错误，在 connection.url 值的后面追加?serverTimezone=UTC  -->
+        <property name="url" value="jdbc:mysql://127.0.0.1:3306/test?serverTimezone=UTC" />
+        <property name="username" value="root"/>
+        <property name="password" value="wugang650"/>
+      </dataSource>
+    </environment>
+  </environments>
+  <mappers>
+    <mapper resource="mybatis.xml"/>
+  </mappers>
+</configuration>
